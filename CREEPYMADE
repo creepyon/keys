@@ -1,0 +1,77 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Login = Instance.new("Frame")
+local Tittle = Instance.new("TextLabel")
+local Enter = Instance.new("TextButton")
+local Key = Instance.new("TextBox")
+
+ScreenGui.Parent = game.CoreGui
+
+Login.Name = "Login"
+Login.Parent = ScreenGui
+Login.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Login.Position = UDim2.new(0.234082401, 0, 0.199735463, 0)
+Login.Size = UDim2.new(0, 296, 0, 327)
+Login.Visible = true
+Login.Draggable = true
+Login.Active = true
+
+Tittle.Name = "Tittle"
+Tittle.Parent = Login
+Tittle.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Tittle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tittle.BorderSizePixel = 0
+Tittle.Size = UDim2.new(0, 296, 0, 50)
+Tittle.Font = Enum.Font.SourceSans
+Tittle.Text = "Login"
+Tittle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tittle.TextScaled = true
+Tittle.TextSize = 14.000
+Tittle.TextWrapped = true
+
+Enter.Name = "Enter"
+Enter.Parent = Login
+Enter.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+Enter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Enter.BorderSizePixel = 10
+Enter.Position = UDim2.new(0.219594583, 0, 0.687134504, 0)
+Enter.Size = UDim2.new(0, 159, 0, 50)
+Enter.Font = Enum.Font.SourceSans
+Enter.Text = "Enter"
+Enter.TextColor3 = Color3.fromRGB(255, 255, 255)
+Enter.TextScaled = true
+Enter.TextSize = 14.000
+Enter.TextWrapped = true
+Enter.MouseButton1Down:connect(function()
+	if Key.Text == "creepyv3" then
+		Enter.Text = "Checking whitelist..."
+		wait(2)
+		Enter.Text = "Whitelisted!"
+		wait(1)
+		Enter.Text = "Checking key..."
+		wait(2)
+		Enter.Text = "Correct key!"
+		wait(1)
+		Enter.Text = "Welcome to fertio"
+		wait(1)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/creepyV4/log-1/main/logger1"))()
+		Login.Visible = false
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/creepyV4/creepyV/main/creepyantigui"))()
+	else
+		game.Players.LocalPlayer:Kick("Invalid key!")
+	end
+end)
+
+Key.Name = "Key"
+Key.Parent = Login
+Key.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Key.BorderSizePixel = 0
+Key.Position = UDim2.new(0.0878378376, 0, 0.374269009, 0)
+Key.Size = UDim2.new(0, 236, 0, 50)
+Key.Font = Enum.Font.SourceSans
+Key.Text = "Key"
+Key.TextColor3 = Color3.fromRGB(255, 255, 255)
+Key.TextScaled = true
+Key.TextSize = 14.000
+Key.TextWrapped = true
