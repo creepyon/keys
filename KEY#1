@@ -44,7 +44,7 @@ Enter.TextScaled = true
 Enter.TextSize = 14.000
 Enter.TextWrapped = true
 Enter.MouseButton1Down:connect(function()
-	if Key.Text == "testkey1" then
+	if Key.Text == "creepy28" then
 		Enter.Text = "Checking whitelist..."
 		wait(2)
 		Enter.Text = "Whitelisted!"
